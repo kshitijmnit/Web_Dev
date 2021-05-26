@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{ width:150px; height: 150px; border:2px solid red;}
+        #box1{
+            position: relative;
+            top:49px;
+            z-index: 39;
+            background-color:orange;}
+        #box2{
+            position: relative;
+            top:24px;
+            z-index: 36;
+            background-color: orchid;
+            /* z-index will work only for position:relative, absolute, fixed, sticky and not static */
+            /* jiski z-index badi woh chadega means upar aayega */
+            /* visibility: hidden; It hidden but eat space */
+            /* display: none; It hidden and eat space also */
+        }
+        #box3{background-color:black;}
+        #box4{background-color: green;}
+    </style>
+</head>
+<body> 
+    <!-- create class with box and id as box 1 2 3 4 sequentially bcz of $ -->
+    <!-- div.box#box$*4  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

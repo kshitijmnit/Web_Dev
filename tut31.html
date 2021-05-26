@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: thistle;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div > p means it works only if p is immediate child of div */
+        /* div > p{
+            color:yellow;
+            background-color: green;
+        } */
+        /* div + p means this css is applicable iff div is previous sibbling of p */
+        div + p{
+            background-color: black; color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is another paragraph inside li</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+    
+</body>
+</html>

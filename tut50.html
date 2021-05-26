@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+</head>
+<body>
+    <script>
+        var str = "This is a string"
+        console.log(str)
+        var position = str.indexOf('is') // It give first occurence of first substring
+        console.log(position)
+        console.log(str.lastIndexOf('is')) // It give last occurence of substring
+        var substr = str.slice(1,6);
+        console.log(substr) // It print char from inclusive 1 to exclusive 6
+        console.log(str.substr(1,6))
+        console.log(str.length)
+        var replaced = str.replace("string", "Harry") //It changes string from harry and immutable remains str
+        console.log(replaced)
+        
+        console.log(str.toUpperCase())
+        var newString = str.concat("SFDGHNM"); //Alternate of + operator in string
+        console.log(newString)
+
+        var strWithSpaces = "    asdfjsadjf  asd     "
+        console.log(strWithSpaces.trim()) //Remove spaces from both sides
+
+        var char2 = str.charAt(2) // Alternate of str[2]
+        console.log(char2)
+        console.log(str[2]);
+
+
+    </script>
+</body>
+</html>

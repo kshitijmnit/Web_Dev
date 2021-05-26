@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex; flex-direction: row; 
+        }
+        .card{
+            margin: 23px 12px; padding:23px 12px; background-color:thistle;
+            /* box-shadow: means offset in x offset in y and shadow color  */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: means offset x offset y spread radius and shadow color  */
+            /* box-shadow: -10px -13px 15px rgba(40, 80, 111, 0.6); */
+            /* box-shadow: inset 50px 12px green; */
+            box-shadow: 12px 10px green, 15px 12px yellow;
+        }
+        /* Text shadow  */
+        .card h2{
+            text-shadow: 2px 2px 3px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quas officiis possimus aliquid consectetur ad fugiat similique eum quia veniam, asperiores omnis eligendi quis labore qui, nulla atque modi aspernatur error? Officiis, amet laboriosam.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quas officiis possimus aliquid consectetur ad fugiat similique eum quia veniam, asperiores omnis eligendi quis labore qui, nulla atque modi aspernatur error? Officiis, amet laboriosam.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is C++ course which means we dont stop it till completed</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quas officiis possimus aliquid consectetur ad fugiat similique eum quia veniam, asperiores omnis eligendi quis labore qui, nulla atque modi aspernatur error? Officiis, amet laboriosam.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

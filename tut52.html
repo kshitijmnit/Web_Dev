@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <script>
+        let myVar = 34;
+        let myVar2 = "This is string"
+        var myVar3 = null;
+        var myVar4 = undefined;
+
+        /*Object */ console.log("Object");
+        var employee = {
+            name : "Kshitij",
+            salary : 10,
+            channel : "CodeWithHarry"
+        }
+        console.log(employee)
+        console.log(employee.channel)
+        console.log(employee['channel']) /* This is identical with above */ 
+
+        /*Array*/ console.log("Array")
+        let names = ["Kshitij", 10, "CodeWithHarry"]
+        console.log(names)
+
+        /*Array using new keywod*/ console.log("Array using new keyword")
+        let names1 = new Array("Kshitij", 10, "CodeWithHarry")
+        console.log(names1)
+
+        let x = [41, 2, 4, "Harry", undefined]
+        console.log(x.sort())
+        x.push("Hey!! I am pushed")
+        console.log(x)
+    </script>
+</body>
+</html>

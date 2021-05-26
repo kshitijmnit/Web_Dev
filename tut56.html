@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container yaara
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        console.log(nav.innerHTML);
+        nav.innerHTML = "<li> Yaara list item changed by DOM </li>";
+        console.log(nav.innerHTML);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container); // It returns a HTML collection having two Elements
+        console.log(container[0]);
+
+        let sel = document.querySelector('#nav');
+        console.log("querySelector returns", sel);
+        console.log(document.querySelector('#nav>li'));
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional</title>
+</head>
+<body>
+    <script>
+        var str1 = "This is a string"
+        str1 = "This is a string2"
+        console.log(str1) 
+        // let is variable having block level scope (recommended)
+        let a = 'u' 
+        {
+            let a = "Inner block"
+            console.log(a)
+        }
+        console.log(a)
+        const c = "This cannot be changed"
+        console.log(c)
+        let age = 17;
+        if(age > 18)
+            console.log("Eligible for voting")
+        else
+            console.log("Not eligible")
+        
+        const cups = 45;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+            case 45:
+                console.log("The value of cups is 45")
+                break
+            default:
+                console.log("Nothing works")
+                break;
+        }
+    </script>
+</body>
+</html>

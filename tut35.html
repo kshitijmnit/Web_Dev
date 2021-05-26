@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and Custom Properties</title>
+    <style>
+        :root{
+            /* It contains all the global variables  */
+            --box-colorji : yellow;
+        }
+        .box{
+            --box-color: violet; /* CSS user defined variable box-color and this have scope under this block only*/
+            width:200px; height:200px; background-color: var(--box-color); border:2px solid red; margin: 2px 9px;
+            box-shadow: 3px 3px var(--box-color) ;
+        }
+        .container{
+            --box-color: green;
+            display: flex; flex-direction: row;
+            background-color: var(--box-colorji);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

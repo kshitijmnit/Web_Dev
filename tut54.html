@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert Prompt Confirm</title>
+</head>
+<body>
+    <script>
+        // Alert is function doesnot return anything
+        // alert("OYE")
+
+        // Prompt is function which takes input from the user
+        // let name = prompt("What is your name?", "Guest");
+        // console.log(name);   
+
+        //confirm is function which takes input and produces yes or no i.e boolean
+        let deletePost = confirm("Do you really want to delete this post");
+        console.log(deletePost);
+
+        if(deletePost)
+            console.log("Deleted bhai");
+        else
+            console.log("Not deleted yaara");
+    </script>
+</body>
+</html>

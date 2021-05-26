@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo selector and more design</title>
+    <style>
+        .container{
+            border:2px solid red;
+            background-color: pink;
+            padding:34px;
+            margin:34px auto;
+            width:666px;
+        }
+        .btn{
+            background-color: royalblue;
+            padding:6px;
+            border:none;
+            cursor:pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        /* This below selector is psudo selector */
+        a:hover{
+            color:sandybrown;
+            background-color:yellow;
+            border: 2px solid black;
+        }
+        a:visited{
+            color:snow;
+        }
+        a:active{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt cumque harum excepturi facilis esse quod, eius corrupti enim pariatur at, sit beatae temporibus expedita quaerat? Tenetur totam natus soluta ipsam, asperiores atque accusantium ducimus.</p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* CSS position: static(default), absolute, relative, fixed, sticky */
+        .container{
+            box:2px solid red;
+            background-color:lightseagreen;
+            height:1000px; 
+        }
+        .box{
+            border:2px solid red;
+            width:150px;
+            height:150px;
+            display: inline-block;
+        }
+        #box3{
+            /* relative: means to its original position; */
+            /* position:relative; */
+            /* absolute: means to its parent position */
+            /* position: absolute; */
+            /* fixed: always fixed to browser window */
+            /* position: fixed; */
+            /* right:4px;
+            bottom:2px;
+            /* top:40px;  
+            left:134px;  */ 
+            /* sticky: chupak jayega */
+            position:sticky;
+            top:3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- div.box#box*4 -->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
